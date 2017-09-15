@@ -1,6 +1,4 @@
-﻿using System.Data.Common;
-
-namespace Library_Domain_Model_Exercise
+﻿namespace Library_Domain_Model_Exercise
 {
     public class Book
     {
@@ -8,21 +6,21 @@ namespace Library_Domain_Model_Exercise
 
         private string author { get; }
 
-        private string code { get; }
+        public string Code { get; }
 
-        private Location location { get; }
+        public Location Location { get; set; }
 
         public Book(string title, string author, string code, Location location)
         {
             this.title = title;
             this.author = author;
-            this.code = code;
-            this.location = location;
+            Code = code;
+            Location = location;
         }
 
         public override string ToString()
         {
-            return $"Title: {title}, Author: {author}, Code: {code}, Location: {location}";
+            return $"Title: {title}, Author: {author}, Code: {Code}, Location: {Location}";
         }
     }
 }

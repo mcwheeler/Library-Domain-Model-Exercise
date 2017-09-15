@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 
 namespace Library_Domain_Model_Exercise
@@ -21,10 +19,10 @@ namespace Library_Domain_Model_Exercise
         public Library(string name)
         {
             Name = name;
-            this.librarians = new List<Librarian>();
-            this.patrons = new List<Patron>();
-            this.locations = new List<Location>();
-            this.books = new List<Book>();
+            librarians = new List<Librarian>();
+            patrons = new List<Patron>();
+            locations = new List<Location>();
+            books = new List<Book>();
         }
 
         public void AddLibrarian(Librarian librarian)
@@ -54,6 +52,37 @@ namespace Library_Domain_Model_Exercise
         }
 
         public IList<Book> GetBooksInStaging()
+        {
+            var returnValue = new List<Book>();
+
+            foreach (var book in books)
+            {
+                if (book.Location.IsStaging())
+                {
+                    returnValue.Add(book);
+                }
+            }
+
+            return returnValue;
+        }
+
+        public void ShelveBooksInStaging()
+        {
+            foreach (var book in GetBooksInStaging())
+            {
+                foreach (var location in locations)
+                {
+                    var deweyDecimalRange = location.GetDeweyDecimalRange();
+                    if (deweyDecimalRange.Contains(book.Code))
+                    {
+                        book.Location = location;
+                        break;
+                    }
+                }
+            }
+        }
+
+        public IList<Book> GetAllBooks()
         {
             return books;
         }

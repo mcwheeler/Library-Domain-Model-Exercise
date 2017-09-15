@@ -5,3 +5,10 @@ D:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj
 D:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj\Debug\Library-Domain-Model-Exercise.csproj.CoreCompileInputs.cache
 D:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj\Debug\Library-Domain-Model-Exercise.exe
 D:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj\Debug\Library-Domain-Model-Exercise.pdb
+C:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\bin\Debug\Library-Domain-Model-Exercise.exe.config
+C:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\bin\Debug\Library-Domain-Model-Exercise.exe
+C:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\bin\Debug\Library-Domain-Model-Exercise.pdb
+C:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj\Debug\Library-Domain-Model-Exercise.csprojResolveAssemblyReference.cache
+C:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj\Debug\Library-Domain-Model-Exercise.csproj.CoreCompileInputs.cache
+C:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj\Debug\Library-Domain-Model-Exercise.exe
+C:\Source\GitHub\Library-Domain-Model-Exercise\Library-Domain-Model-Exercise\obj\Debug\Library-Domain-Model-Exercise.pdb

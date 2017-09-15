@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace Library_Domain_Model_Exercise
@@ -37,6 +36,11 @@ namespace Library_Domain_Model_Exercise
             }
 
             return "No Dewey Decimal Range,";
+        }
+
+        public bool IsStaging()
+        {
+            return type == (int)LocationType.Staging;
         }
 
         public override string ToString()
